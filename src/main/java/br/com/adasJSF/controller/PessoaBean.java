@@ -50,6 +50,11 @@ public class PessoaBean implements Serializable {
 		return "/pessoa/listar.xhtml";
 	}
 	
+	public String excluir(Pessoa pessoaExcluir) {
+		pessoas.remove(pessoaExcluir);
+		return null;
+	}
+	
 	public String telaEdicao() {
 		return "/pessoa/editar.xhtml";
 	}

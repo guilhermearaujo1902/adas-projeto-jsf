@@ -14,6 +14,9 @@
 	<h:form>
 		<h:panelGrid columns="2">
 			
+			<h:outputText value="ID"/>
+			<h:inputText value="#{pessoaBean.pessoa.id}" readonly="true"/>
+			
 			<h:outputText value="Nome"/>
 			<h:inputText value="#{pessoaBean.pessoa.nome}"/>
 			
@@ -21,7 +24,7 @@
 			<h:inputText value="#{pessoaBean.pessoa.profissao}"/>
 			
 			<h:outputText/>
-			<h:commandButton value="Adicionar" action="#{pessoaBean.editar}"/>
+			<h:commandButton value="Salvar" action="#{pessoaBean.editar}"/>
 			
 		</h:panelGrid>
 	</h:form>
